@@ -1,12 +1,13 @@
  body{
 background: linear-gradient(rgb(48, 46, 48), rgb(51, 51, 52),rgb(76, 76, 82), rgb(152, 148, 155)) fixed;
+color:rgb(252, 253, 253)
   }
   
 
 .titulo{
     text-align: center;
     font-size: 480%;
-    
+    color:rgb(99, 153, 201)
 }
 
 img{
