@@ -14,7 +14,7 @@ const produtos =[
   imagem: "produto3.png"},
   {id: 4, nome: "Breath Of The Wild - Nintendo Switch", preco:"289,89", descricao: "The Legend of Zelda: Breath of the Wild é a mais nova aventura da franquia, trazendo desta vez um mundo aberto vasto, rico e cheio de vida como nunca antes.", 
   imagem: "produto4.png"},
-  {id: 5, nome: "Dungeons & Dragons: Kit Essencial", preco:"119,99", descricao: "Jogo PES 2019 para PlayStation 4 P4DA0072101FGM", 
+  {id: 5, nome: "Dungeons & Dragons: Kit Essencial", preco:"119,99", descricao: "RPG Cor, Multicolorido Material do produto: Papel Itens inclusos: 1", 
   imagem: "produto5.png"},
   {id: 6, nome: "GTA V", preco:"509,39", descricao: "Carregamento mais Rápido — Nunca foi tão rápido carregar o mundo de Los Santos e Blaine County, tendo acesso quase instantâneo à ação.", 
   imagem: "produto6.png"},
