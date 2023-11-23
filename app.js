@@ -16,7 +16,7 @@ const produtos =[
   imagem: "produto4.png"},
   {id: 5, nome: "Dungeons & Dragons: Kit Essencial", preco:"119,99", descricao: "Jogo PES 2019 para PlayStation 4 P4DA0072101FGM", 
   imagem: "produto5.png"},
-  {id: 6, nome: "Dungeons & Dragons: Monster Manual", preco:"509,39", descricao: "Jogo PES 2019 para PlayStation 4 P4DA0072101FGM", 
+  {id: 6, nome: "GTA V", preco:"509,39", descricao: "Carregamento mais Rápido — Nunca foi tão rápido carregar o mundo de Los Santos e Blaine County, tendo acesso quase instantâneo à ação.", 
   imagem: "produto6.png"},
   {id: 7, nome: "Jogo PES 2019", preco:"175,87", descricao: "O Livro dos Monstros reúne um verdadeiro acervo de criaturas icônicas presentes no universo de Dungeons & Dragons, incluindo dragões, gigantes, devoradores de mente e observadores. ", 
   imagem: "produto7.png"},

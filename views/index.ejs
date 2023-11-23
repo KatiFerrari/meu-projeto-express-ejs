@@ -5,22 +5,23 @@
   <link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
 <body>
-  <% for(let produto of produtos){ %>
-    <h1> Katieli </h1> 
-    <% } %>
+
   <h1 class="titulo"> Jogos</h1>
+
   <div class="flex-conteiner">
+    <% for(let produto of produtos){ %>
     <div>
       <a href="/produto1">
-        <img src="https://m.media-amazon.com/images/I/813FuI3y8zL._AC_SX385_.jpg" alt="" alt="">
+        <img src="/imagem/<%=produto.imagem%>" alt="" alt="">
       </a>
-      <p><strong>FIFA 23 Xbox One<br>
-        Xbox 360 </strong></p>
+      <p><strong><%=produto.nome%><br>
+         </strong></p>
           <p><strong>Preço:</strong> R$249,92</p>
-    </div>
-
-    
-
+          <button style="background"
+       
+    <% } %>
+  </div>
+<!--
     <div>
       <a href="/produto2">
         <img src="https://m.media-amazon.com/images/I/71vueWNXEfL._AC_SX522_.jpg" alt="" alt="">
@@ -49,6 +50,7 @@
         XBOX 360</strong></p>
         <p><strong>Preço:</strong> R$74,44</p>
     </div>
+  -->
 </div>
 
 </body>
