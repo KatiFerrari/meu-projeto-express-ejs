@@ -18,17 +18,17 @@ const produtos =[
   imagem: "produto5.png"},
   {id: 6, nome: "GTA V", preco:"509,39", descricao: "Carregamento mais Rápido — Nunca foi tão rápido carregar o mundo de Los Santos e Blaine County, tendo acesso quase instantâneo à ação.", 
   imagem: "produto6.png"},
-  {id: 7, nome: "Jogo PES 2019", preco:"175,87", descricao: "O Livro dos Monstros reúne um verdadeiro acervo de criaturas icônicas presentes no universo de Dungeons & Dragons, incluindo dragões, gigantes, devoradores de mente e observadores. ", 
+  {id: 7, nome: "The Crew: Motorfest ", preco:"276,07", descricao: "BEM VINDO AO MOTORFEST: Adquira seu ingresso para um festival durante todo o ano projetado para todos os entusiastas de carros na bela ilha de O’Ahu Funcionalidades do Jogo. ", 
   imagem: "produto7.png"},
-  {id: 8, nome: "Jogo PES 2019", preco:"509,39", descricao: "Jogo PES 2019 para PlayStation 4 P4DA0072101FGM", 
+  {id: 8, nome: "Gran Turismo 7 Edição Padrão", preco:"168,90", descricao: "Encontre seu caminho Curta a experiência completa do verdadeiro simulador de corridas. Com 25 anos de estrada. Assuma o volante de mais de 420 carros já no primeiro dia.", 
   imagem: "produto8.png"},
-  {id: 9, nome: "Jogo PES 2019", preco:"509,39", descricao: "Jogo PES 2019 para PlayStation 4 P4DA0072101FGM", 
+  {id: 9, nome: "Wrc Generations", preco:"149,89", descricao: "Dirija no meio da ação atrás do volante dos novos híbridos WRC 2022. Levante a todos os desafios da simulação de rali mais abrangente, realista e exigente já desenvolvida.", 
   imagem: "produto9.png"},
-  {id: 10, nome: "Jogo PES 2019", preco:"509,39", descricao: "Jogo PES 2019 para PlayStation 4 P4DA0072101FGM", 
+  {id: 10, nome: "Dragon Ball Z: Kakarot", preco:"184,90", descricao: "Vivencie a história de Goku em DRAGON BALL Z: KAKAROT! Além das batalhas épicas, experimente a vida no mundo do DRAGON BALL Z enquanto luta, pesca, come e treina com o Goku.", 
   imagem: "produto10.png"}
  ]
 
- function  buscarProdutoPorID(id){
+ function buscarProdutoPorID(id){
   const produto = produtos.find(produto => produto.id == id);
   return produto || null
 }
@@ -37,23 +37,10 @@ app.get('/', (req, res) => {
   res.render('index', { produtos });
 });
 
-app.get('/produto1', (req, res) => {
-  res.render('produto1');
+app.get('/produto/:id', (req, res) => {
+  const produto = buscarProdutoPorID(req.params.id)
+  res.render('produto1', {produto} );
 });
-
-app.get('/produto2', (req, res) => {
-  res.render('produto2');
-});
-
-app.get('/produto3', (req, res) => {
-  res.render('produto3');
-});
-
-app.get('/produto4', (req, res) => {
-  res.render('produto4');
-});
-
-
 
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);

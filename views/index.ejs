@@ -6,21 +6,23 @@
 </head>
 <body>
 
-  <h1 class="titulo"> Jogos</h1>
+  <h1 class="titulo">Jogos</h1>
 
   <div class="flex-conteiner">
     <% for(let produto of produtos){ %>
     <div>
-      <a href="/produto1">
+      <a href="/produto/<%= produto.id%>">
         <img src="/imagem/<%=produto.imagem%>" alt="" alt="">
       </a>
       <p><strong><%=produto.nome%><br>
          </strong></p>
-          <p><strong>Preço:</strong> R$249,92</p>
-          <button style="background"
-       
-    <% } %>
+      <p> Preço: <strong><%=produto.preco%><br>
+         </strong></p>
+         <a href="/produto/<%= produto.id%>">
+        </a>  
+          <% } %>
   </div>
+ 
 <!--
     <div>
       <a href="/produto2">
